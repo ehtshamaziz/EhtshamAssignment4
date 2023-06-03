@@ -1,0 +1,19 @@
+pipeline{
+agent any
+
+stages{
+stage('Build'){
+steps{
+sh'python 3 file1.py'
+}
+stage('Test'){
+steps{
+sh 'python3 file2.py'
+}
+}
+stage('Deploy'){
+steps{
+sh 'python3 file.py'
+}}
+}
+}
